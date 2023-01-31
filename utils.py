@@ -18,10 +18,10 @@ class CellPhone():
 
     def load_model(self):
         
-        with open (r'C:\Users\SAI\practice\Linear Regression Model\project_cell\cellphone_price_predictor.pkl','rb') as file:
+        with open ('cellphone_price_predictor.pkl','rb') as file:
             self.model = pickle.load(file)
 
-        with open (r'C:\Users\SAI\practice\Linear Regression Model\project_cell\project_data.json','r') as file:
+        with open ('project_data.json','r') as file:
             self.json_data = json.load(file) 
 
 
